@@ -12,12 +12,6 @@
     display: flex;
     flex-direction: column;
 }
-@media (max-width: 768px ) {
-    .header {
-        display: grid;
-
-    }
-}
 .logo img{
     width: 10%;
     height: 20vh;
@@ -162,6 +156,31 @@ video{
     margin-left: 110px;
     color: rgb(179, 16, 16);
 }
+.card1 {
+    transition: all 1s;
+}
+.card1:hover {
+    transform: scale(2);
+}
+.card2 {
+    transition: all 1s;
+}
+.card2:hover {
+    transform: scale(2);
+}
+.card3 {
+    transition: all 1s;
+}
+.card3:hover {
+    transform: scale(2);
+}
+.card4 {
+    transition: all 1s;
+}
+.card4:hover {
+    transform: scale(2);
+}
+
 h3{
     font-size: 50px;
 }
