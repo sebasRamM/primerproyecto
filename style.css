@@ -50,7 +50,6 @@
     font-size: larger;
     flex-wrap: nowrap;
 }
-
 a{
     text-decoration: none;
     color: black;
@@ -242,9 +241,8 @@ h3{
 .correo h4{
     margin-left: 10px;
 }
-.form li{
-    margin-left: 70%;
-    text-decoration: none;
+.form{
+    margin-left: 100px;
 }
 /* Termina CSS Página principal */
 .footer{
