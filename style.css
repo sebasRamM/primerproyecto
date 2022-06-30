@@ -212,6 +212,10 @@ h3{
     width: 350px;
     margin-left: 20px;
 }
+.contenedor-contactos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 .contactos{
     display: flex;
     flex-direction: row;
@@ -219,15 +223,16 @@ h3{
     height: 400px;
 }
 .mapa{
-    width: 130%;
-    height: 70%;
-    margin-left: 120%;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
 }
 .iconos__contactos{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-left: 50px;
+    margin-left: 90px;
 
 }
 .ubicacion,
@@ -250,6 +255,9 @@ h3{
     width: 100%;
     height: 200px;
     position: relative;
+}
+.logo-footer {
+    width: 15%;
 }
 .menu__footer ul{
     position: absolute;
