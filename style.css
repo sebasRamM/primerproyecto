@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
 }
+.body {
+    background-color: rgb(17, 17, 99) ;
+}
 
 .header{
-    background-color: gainsboro;
+    background-color: gainsboro; 
     width: 100%;
     height: 200px;
     margin-bottom: 30px;
@@ -51,8 +54,11 @@
     flex-wrap: nowrap;
 }
 a{
-    text-decoration: none;
-    color: black;
+    text-decoration: none !important;
+    color: black !important;
+}
+a:hover {
+    transform: scale(1.5);
 }
 .contenedor__topnav div{
     display: flex;
