@@ -2,34 +2,64 @@
     margin: 0;
     padding: 0;
 }
-.body {
-    background-color: rgb(17, 17, 99) ;
-}
-
-.header{
+.contenedor-header{
     background-color: gainsboro; 
     width: 100%;
-    height: 200px;
+    height: fit-content;
     margin-bottom: 30px;
     position: relative;
     display: flex;
     flex-direction: column;
 }
 .logo img{
-    width: 10%;
+    width: 200px;
     height: 20vh;
     margin-left: 20px;
 }
-.logo__menu{
-    margin-left: 30%;
+@media (max-width: 768px) {
+    .logo img {
+        width: 30%;
+        height: 20vh;
+    }
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+.contenedor__topnav{
     position: absolute;
-    top: 60%;
-    right: 80%;
+    left: 83%;
+    top: 10%;
+}
+.topnav{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+@media (max-width: 768px) {
+    .topnav {
+        position: absolute;
+        left: 5%;
+        top: 10%;
+    }
+}
+@media (max-width: 375px) {
+    .topnav {
+        display: none;
+    }
 }
 .iconos-topnav{
     display: flex;
-    align-items: center;
-    size: 10%;
+    flex-direction: row;
+}
+@media (max-width: 768px ) {
+    .iconos-topnav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 100px;
+    }
 }
 .english,
 .shopping,
@@ -37,21 +67,26 @@
     margin-left: 20px;
 }
 .menu ul{
-    font-weight: 400;
-    position: absolute;
-    top: 55%;
-    left: 42%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
 }
 .menu li{
-    padding: 20px 60px;
     display: flex;
     flex-direction: column;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 100px;
     font-size: larger;
-    flex-wrap: nowrap;
+}
+@media (max-width: 768px) {
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 a{
     text-decoration: none !important;
@@ -60,18 +95,7 @@ a{
 a:hover {
     transform: scale(1.5);
 }
-.contenedor__topnav div{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    left: 80%;
-    top: 15%;
-}
-.topnav{
-    position: absolute;
-    top: 10%;
-    left: 50%;
-}
+
 /* CSS Página principal */
 .principal{
     display: flex;
@@ -92,24 +116,6 @@ video{
     object-fit: cover;
     width: 100%;
     height: 70vh;
-}
-
-.productos{
-    margin-top: 5%;
-    position: relative;
-}
-.carrusel{
-    display: flex;
-    width: 100%;
-    height: 70vh;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-}
-.carrusel img {
-    flex: 0 0 100%;
-    width: 100%;
-    object-fit: cover;
-    scroll-snap-align: center;
 }
 .texto__ofertas,
 .texto__productos,
@@ -133,6 +139,9 @@ video{
 @media (max-width: 767px) {
     .contenedor-ofertas {
         grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media (min-width: 1024px ) {
@@ -162,28 +171,28 @@ video{
     color: rgb(179, 16, 16);
 }
 .card1 {
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .card1:hover {
-    transform: scale(2);
+    transform: scale(1.3);
 }
 .card2 {
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .card2:hover {
-    transform: scale(2);
+    transform: scale(1.3);
 }
 .card3 {
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .card3:hover {
-    transform: scale(2);
+    transform: scale(1.3);
 }
 .card4 {
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .card4:hover {
-    transform: scale(2);
+    transform: scale(1.3);
 }
 
 h3{
@@ -218,11 +227,25 @@ h3{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+@media (max-width: 768px) {
+    .contenedor-contactos {
+        display: flex;
+        flex-direction: column;
+    }
+}
 .contactos{
     display: flex;
     flex-direction: row;
     width: 400px;
     height: 400px;
+}
+@media (max-width: 768px) {
+    .form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .mapa{
     width: 100%;
@@ -235,7 +258,14 @@ h3{
     flex-direction: column;
     justify-content: space-evenly;
     margin-left: 90px;
-
+}
+@media (max-width: 768px) {
+    .iconos__contactos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 50px 0 50px 0;
+    }
 }
 .ubicacion,
 .telefono,
@@ -253,18 +283,13 @@ h3{
 }
 /* Termina CSS Página principal */
 .footer{
-    background-color: gainsboro;
+    background-color: gainsboro; 
     width: 100%;
-    height: 200px;
+    height: fit-content;
+    margin-bottom: 30px;
     position: relative;
-}
-.logo-footer {
-    width: 15%;
-}
-.menu__footer ul{
-    position: absolute;
-    left: 20%;
-    top: 40%;
+    display: flex;
+    flex-direction: column;
 }
 .redes{
     display: flex;
@@ -273,15 +298,21 @@ h3{
     top: 80px;
     left: 80%;
 }
+@media (max-width: 768px) {
+    .redes {
+        display: flex;
+        flex-direction: column;
+    }
+}
 .fb,
 .inst,
 .twitter{
     margin-left: 30px;
 }
 h6{
-    position: absolute;
-    left: 45%;
-    bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /* CSS Productos */
@@ -289,147 +320,225 @@ h6{
 .hombre{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
- .producto__hombre{
-    width: 300px;
-    margin: 80px;
+ .producto-hombre img{
     border: 5px solid gainsboro;
+    width: 300px;
+    height: 40vh;
+    margin: 60px;
 } 
 .mujer {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
-.producto__mujer{
-    width: 300px;
-    margin: 80px;
+.producto-mujer img{
     border: 5px solid gainsboro;
+    width: 300px;
+    height: 40vh;
+    margin: 60px;
 }
 .niño{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
-.producto__niño{
-    width: 300px;
-    margin: 80px;
+.producto-niño img{
     border: 5px solid gainsboro;
+    width: 300px;
+    height: 40vh;
+    margin: 60px;
 }
 .articulos{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
-.articulosDeportivos{
-    width: 300px;
-    margin: 80px;
+.articulosDeportivos img{
     border: 5px solid gainsboro;
+    width: 300px;
+    height: 40vh;
+    margin: 60px;
 }
 .textoProductos{
     font-size: 35px;
     margin-left: 20px;
 } 
+@media (max-width: 768px) {
+    .hombre, .mujer, .niño, .articulos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 769px) and (max-width:1280px) {
+    .hombre, .mujer, .niño, .articulos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 375px) {
+    .hombre, .mujer, .niño, .articulos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 /* Termina CSS Productos */
 
 /* CSS Ofertas */
 
 .ofertas{
-    position: relative;
     margin-bottom: 50px;
 }
-.ofertas1,
-.ofertas2{
+.ofertas1{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
 }
+.ofertas2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.imagenesOferta1 img{
+    width: 200px;
+    height: 35vh;
+    margin: 80px;
+    margin-bottom: 0;
+    border: 5px solid gainsboro;
+}
+.imagenesOferta2 img{
+    width: 200px;
+    height: 35vh;
+    margin: 80px;
+    margin-bottom: 0;
+    border: 5px solid gainsboro;
+}
+.imagenesOferta3 img{
+    width: 200px;
+    height: 35vh;
+    margin: 80px;
+    margin-bottom: 0;
+    border: 5px solid gainsboro;
+}
+.imagenesOferta4 img{
+    width: 200px;
+    height: 35vh;
+    margin: 80px;
+    margin-bottom: 0;
+    border: 5px solid gainsboro;
+}
+.imagenesOferta5 img{
+    width: 200px;
+    height: 35vh;
+    margin: 80px;
+    margin-bottom: 0;
+    border: 5px solid gainsboro;
+}
+.imagenesOferta6 img{
+    width: 200px;
+    height: 35vh;
+    margin: 80px;
+    margin-bottom: 0;
+    border: 5px solid gainsboro;
+}
+.imagenesOferta7 img{
+    width: 200px;
+    height: 35vh;
+    margin: 80px;
+    margin-bottom: 0;
+    border: 5px solid gainsboro;
+}
+.imagenesOferta8 img{
+    width: 200px;
+    height: 35vh;
+    margin: 80px;
+    margin-bottom: 0;
+    border: 5px solid gainsboro;
+}
+
 .iconosOferta1{
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    left: 7%;
-    top: 50%;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
     color: rgb(179, 16, 16);
-}
-.imagenesOferta:hover {
-    transform: scale(2);
 }
 .iconosOferta2{
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    left: 35%;
-    top: 50%;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
     color: rgb(179, 16, 16);
 }
 .iconosOferta3{
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    left: 60%;
-    top: 50%;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
     color: rgb(179, 16, 16);
 }
 .iconosOferta4{
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    left: 85%;
-    top: 50%;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
     color: rgb(179, 16, 16);
 }
 .iconosOferta5{
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    left: 7%;
-    top: 95%;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
     color: rgb(179, 16, 16);
 }
 .iconosOferta6{
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    left: 35%;
-    top: 95%;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
     color: rgb(179, 16, 16);
 }
 .iconosOferta7{
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    left: 60%;
-    top: 95%;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
     color: rgb(179, 16, 16);
 }
 .iconosOferta8{
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    left: 85%;
-    top: 95%;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
     color: rgb(179, 16, 16);
 }
-
-.imagenesOferta{
-    width: 300px;
-    margin: 80px;
-    border: 5px solid gainsboro;
+.hover-ofertas:hover{
+    transform: scale(1.3);
 }
-
+@media (max-width: 768px) {
+    .ofertas1, .ofertas2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 375px) {
+    .ofertas1, .ofertas2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 /* Termina CSS ofertas */
 
 /* CSS Noticias */
