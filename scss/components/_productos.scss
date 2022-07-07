@@ -1,0 +1,67 @@
+@import '../base/variables';
+.hombre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.producto-hombre img{
+    border: $border-imagenes;
+    width: 300px;
+    height: 40vh;
+    margin: 60px;
+} 
+.mujer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.producto-mujer img{
+    border: $border-imagenes;
+    width: 300px;
+    height: 40vh;
+    margin: 60px;
+}
+.niño{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.producto-niño img{
+    border: $border-imagenes;
+    width: 300px;
+    height: 40vh;
+    margin: 60px;
+}
+.articulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.articulosDeportivos img{
+    border: $border-imagenes;
+    width: 300px;
+    height: 40vh;
+    margin: 60px;
+}
+.textoProductos{
+    font-size: 35px;
+    margin-left: 20px;
+} 
+@media (max-width: 768px) {
+    .hombre, .mujer, .niño, .articulos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 769px) and (max-width:1280px) {
+    .hombre, .mujer, .niño, .articulos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 375px) {
+    .hombre, .mujer, .niño, .articulos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
