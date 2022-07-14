@@ -8,6 +8,10 @@
 .contenedor-principal{
     position: absolute;
 }
+.carousel-inner img{
+    width: 100%;
+    object-fit: cover;
+}
 .contenido-video{
     color: white;
     text-align: center;
@@ -28,6 +32,7 @@ video{
     margin-bottom: 3%;
     font-size: 40px;
     border-bottom: 3px solid rgb(20, 20, 124);
+    object-fit: cover;
 }
 .contenedor-ofertas{
     display: grid;
@@ -71,28 +76,10 @@ video{
     margin-left: 110px;
     color: $color-ofertas;
 }
-.card1 {
+.ofertas__articulos{
     transition: all 0.5s;
 }
-.card1:hover {
-    transform: scale(1.3);
-}
-.card2 {
-    transition: all 0.5s;
-}
-.card2:hover {
-    transform: scale(1.3);
-}
-.card3 {
-    transition: all 0.5s;
-}
-.card3:hover {
-    transform: scale(1.3);
-}
-.card4 {
-    transition: all 0.5s;
-}
-.card4:hover {
+.ofertas__articulos:hover{
     transform: scale(1.3);
 }
 h3{
@@ -108,7 +95,6 @@ h3{
 }
 .imagen__noticias{
     width: 70%;
-    height: 40vh;
     margin-left: 3%;
 }
 .noticia1 p {

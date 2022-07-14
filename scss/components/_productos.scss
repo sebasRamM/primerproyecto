@@ -1,47 +1,29 @@
 @import '../base/variables';
+@import '../base/extends';
+
 .hombre{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @extend %estructura-productos;
 }
 .producto-hombre img{
-    border: $border-imagenes;
-    width: 300px;
-    height: 40vh;
-    margin: 60px;
+    @extend %border;
 } 
 .mujer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @extend %estructura-productos;
 }
 .producto-mujer img{
-    border: $border-imagenes;
-    width: 300px;
-    height: 40vh;
-    margin: 60px;
+    @extend %border;
 }
 .niño{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @extend %estructura-productos;
 }
 .producto-niño img{
-    border: $border-imagenes;
-    width: 300px;
-    height: 40vh;
-    margin: 60px;
+    @extend %border;
 }
 .articulos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @extend %estructura-productos;
 }
 .articulosDeportivos img{
-    border: $border-imagenes;
-    width: 300px;
-    height: 40vh;
-    margin: 60px;
+    @extend %border;
 }
 .textoProductos{
     font-size: 35px;

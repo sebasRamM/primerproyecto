@@ -1,0 +1,23 @@
+@mixin ofertas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+@mixin img-ofertas {
+    width: 200px;
+    height: 35vh;
+    margin: 80px;
+    margin-bottom: 0;
+    border: $border-imagenes;
+}
+
+@mixin iconos-ofertas {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    color: $color-ofertas;
+}

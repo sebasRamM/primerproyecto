@@ -1,7 +1,6 @@
 
  .contenedor-header{
         background-color: gainsboro; 
-        width: 100%;
         height: fit-content;
         margin-bottom: 30px;
         position: relative;
@@ -11,6 +10,7 @@
     .logo img{
         width: 200px;
         height: 20vh;
+        object-fit: cover;
         margin-left: 20px;
     }
     @media (max-width: 768px) {
@@ -89,7 +89,7 @@
         text-decoration: none !important;
         color: black !important;
     }
-    a:hover {
+    .menu li:hover {
         transform: scale(1.5);
     }
 

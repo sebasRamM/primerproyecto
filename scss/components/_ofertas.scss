@@ -1,139 +1,62 @@
 @import '../base/variables';
+@import '../base/mixins';
+
 .ofertas{
     margin-bottom: 50px;
 }
 .ofertas1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    @include ofertas;
 }
 .ofertas2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    @include ofertas;
 }
 .imagenesOferta1 img{
-    width: 200px;
-    height: 35vh;
-    margin: 80px;
-    margin-bottom: 0;
-    border: $border-imagenes;
+    @include img-ofertas;
 }
 .imagenesOferta2 img{
-    width: 200px;
-    height: 35vh;
-    margin: 80px;
-    margin-bottom: 0;
-    border: $border-imagenes;
+    @include img-ofertas;
 }
 .imagenesOferta3 img{
-    width: 200px;
-    height: 35vh;
-    margin: 80px;
-    margin-bottom: 0;
-    border: $border-imagenes;
+    @include img-ofertas;
 }
 .imagenesOferta4 img{
-    width: 200px;
-    height: 35vh;
-    margin: 80px;
-    margin-bottom: 0;
-    border: $border-imagenes;
+    @include img-ofertas;
 }
 .imagenesOferta5 img{
-    width: 200px;
-    height: 35vh;
-    margin: 80px;
-    margin-bottom: 0;
-    border: $border-imagenes;
+    @include img-ofertas;
 }
 .imagenesOferta6 img{
-    width: 200px;
-    height: 35vh;
-    margin: 80px;
-    margin-bottom: 0;
-    border: $border-imagenes;
+    @include img-ofertas;
 }
 .imagenesOferta7 img{
-    width: 200px;
-    height: 35vh;
-    margin: 80px;
-    margin-bottom: 0;
-    border: $border-imagenes;
+    @include img-ofertas;
 }
 .imagenesOferta8 img{
-    width: 200px;
-    height: 35vh;
-    margin: 80px;
-    margin-bottom: 0;
-    border: $border-imagenes;
+    @include img-ofertas;
 }
-
 .iconosOferta1{
-    display: flex;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    margin-left: 100px;
-    color: $color-ofertas;
+    @include iconos-ofertas;
 }
 .iconosOferta2{
-    display: flex;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    margin-left: 100px;
-    color: $color-ofertas;
+    @include iconos-ofertas;
 }
 .iconosOferta3{
-    display: flex;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    margin-left: 100px;
-    color: $color-ofertas;
+    @include iconos-ofertas;
 }
 .iconosOferta4{
-    display: flex;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    margin-left: 100px;
-    color: $color-ofertas;
+    @include iconos-ofertas;
 }
 .iconosOferta5{
-    display: flex;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    margin-left: 100px;
-    color: $color-ofertas;
+    @include iconos-ofertas;
 }
 .iconosOferta6{
-    display: flex;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    margin-left: 100px;
-    color: $color-ofertas;
+    @include iconos-ofertas;
 }
 .iconosOferta7{
-    display: flex;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    margin-left: 100px;
-    color: $color-ofertas;
+    @include iconos-ofertas;
 }
 .iconosOferta8{
-    display: flex;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    margin-left: 100px;
-    color: $color-ofertas;
+    @include iconos-ofertas;
 }
 .hover-ofertas:hover{
     transform: scale(1.3);
