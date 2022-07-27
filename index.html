@@ -8,7 +8,7 @@
     <meta name="keywords" content="tienda virtual, deportes, ropa deportiva, articulos deportivos, noticias, descuentos, tennis, baseball, basketball, fútbol, fútbol americano, FIFA, NFL, NBA, MLB">
     <meta name="author" content="Sebastian Ramirez Marulanda">
     <meta name="copyright" content="Best Sports 8">
-    <!-- Open Graph -->
+    <!-- Open Graph --> 
     <meta property="og:title" content="Best Sports Infinity Class, Tienda deportiva de alta calidad">
     <meta property="og:description" content="Somos una tienda virtua de ropa y accesorios deportivos de alta calidad, para todas las edades y de toda variedad, además tenemos una sección de noticias deportivas donde nuestros usuarios pueden informarse de toda la actualidad de todos los deportes del mundo">
     <meta property="og:image" content="assets/imagenes/Logo Best Sports 8">
@@ -160,92 +160,103 @@
     
         <h2 class="texto__noticias">NOTICIAS</h2>
     <section class="container-fluid container">
-        <div class="row">
-            <div class="col col-md-6 col-sm-12">
-                <img class="imagen__noticias" src="assets/imagenes/descarga.jpg" alt="imagen de noticia 1">
-                    <div>
-                        <h3>A lebron James le gustaría jugar en los Warriors</h3>
-                        <p>LeBron James recientemente declaró que hay otro equipo con el cual le gustaría jugar y, por qué no, ganar otro anillo.
-
-                        En el reciente avance de The Shop: Uninterrupted de HBO, el llamado "Rey" fue preguntado sobre los dos equipos que quedan vivos en la lucha por el Larry O'Brien.
-                        
-                        A esto, se le cuestionó sobre con cuál jugaría, a lo que James no dudó en responder que con los Golden State Warriors.
-                        
-                        "Me encantaría tener una pelea de me... con Draymond [Green]. Me encanta cuando alguien me maldice", comentó James.</p> 
-                    </div>  
+        <div class="noticias">
+            <div class="col">
+                <div class="card" style="width: 30rem;">
+                    <img src="assets/imagenes/descarga.jpg" class="card-img-top" alt="Lebron James">
+                    <div class="card-body">
+                        <h5 class="card-title">A lebron James le gustaría jugar en los Warriors</h5>
+                            <p>LeBron James recientemente declaró que hay otro equipo con el cual le gustaría jugar y, por qué no, ganar otro anillo...</p>
+                        <a href="/pages/noticias.html" class="btn btn-primary">Noticias</a>
+                    </div>
+                </div>
             </div>
-            <div class="col col-md-6 col-sm-12">
-                <img class="imagen__noticias" src="assets/imagenes/mbappe.jpg" alt="imagen de noticia 2">
-                <div>
-                    <h3>Mbappe sorprendió a todo el mundo al escoger al PSG</h3>
-                    <p> El mes pasado, Kylian Mbappe sorprendió al mundo del fútbol al rechazar al club de sus sueños, o al menos eso decía, el Real Madrid. En la última jornada de la temporada, el francés anunció ante un público exaltado en el Parque de los Príncipes, que iba a renovar con el club de su infancia por tres años más con el mayor contrato de la historia del fútbol: 50 millones de euros al año, con una pago de fichaje adicional de 100 millones. Unas cifras de infarto.
-                    
-                        Por lo tanto, no es de extrañar que, gracias a su nuevo contrato, Mbappé se sitúe en lo más alto de la lista de los 100 jugadores más valorados del mundo. Según el informe realizado por el CIES Football Observatory, que utiliza una serie de variables, como la edad del jugador, su rendimiento, el valor económico de su club y la inflación, para calcular el valor estimado de los traspasos, el campeón de la Liga 1 vale 205,6 euros.</p> 
-                </div>       
-            </div>    
+            <div class="col">
+                <div class="card" style="width: 30rem;">
+                        <img src="assets/imagenes/descarga (1).jpg" class="card-img-top"alt="Kylian Mbappe">
+                    <div class="card-body">
+                        <h5 class="card-title">Mbappe sorprendió a todo el mundo al escoger al PSG</h5>
+                            <p>El mes pasado, Kylian Mbappe sorprendió al mundo del fútbol al rechazar al club de sus sueños, o al menos eso decía, el Real Madrid...</p>
+                        <a href="/pages/noticias.html" class="btn btn-primary">Noticias</a>
+                    </div>
+                </div>
+            </div>   
         </div>
     </section>
         <!-- Fin seccion noticias -->
         <!-- Seccion contactos -->
-    <section>
         <h2 class="texto__contacto">CONTACTOS</h2>
+    <section >
         <div class="contenedor-contactos">
             <div class="contactos">
-                <div class="form">
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Correo Eléctronico</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">Nunca compartiremos su correo con nadie</div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellidos">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Mensaje Enviado</h5>
+                            </div>
+                            <div class="modal-body">
+                                Gracias por tu mensaje, te estaremos contactando por medio de tu correo electrónico
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Guardar</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                      </form>
-                </div>          
+                    </div>
+                </div>
             </div>
-                <!-- Fin formulario --> 
-                <!-- Ubicacion y contactos -->
+            <!-- Fin formulario --> 
+            <!-- Ubicacion y contactos -->
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.879667208088!2d-84.15254538575942!3d9.943968976726188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fb698e1ba15b%3A0x781267d196d66afc!2sMultiplaza%20Escaz%C3%BA!5e0!3m2!1ses!2scr!4v1658931934950!5m2!1ses!2scr"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+            </div>    
+            <div class="iconos-contactos">
+                <div class="ubicacion">
+                    <img src="assets/imagenes/1491254387-pindestinationmaplocation_82942.png" alt="icono ubicacion">
                     <div>
-                        <img class="mapa" src="Assets/imagenes/5fa28157b6339.jpeg" alt="mapa de ubicacion">
+                        <h4>Av. 52 #888
+                            Local 8
+                        </h4>
                     </div>
-                    
-                    <div class="iconos__contactos">
-                        <div class="ubicacion">
-                            <img src="assets/imagenes/1491254387-pindestinationmaplocation_82942.png" alt="icono ubicacion">
-                            <div>
-                                <h4>Av. 52 #888
-                                    Local 8
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="telefono">
-                            <img src="assets/imagenes/phone-handset_icon-icons.com_48252.png" alt="icono de telefono">
-                            <div>
-                                <h4>+506 54631256</h4>
-                            </div>
-                        </div>
-                        <div class="correo">
-                            <img src="assets/imagenes/email-envelope-outline-shape-with-rounded-corners_icon-icons.com_56530.png" alt="icono de correo">
-                            <div>
-                                <h4>bs8@bs8.com</h4>
-                            </div> 
-                        </div>    
+                </div>
+                <div class="telefono">
+                    <img src="assets/imagenes/phone-handset_icon-icons.com_48252.png" alt="icono de telefono">
+                    <div>
+                        <h4>+506 54631256</h4>
                     </div>
-                    <!-- Fin ubicacion y contactos -->
+                </div>
+                <div class="correo">
+                    <img src="assets/imagenes/email-envelope-outline-shape-with-rounded-corners_icon-icons.com_56530.png" alt="icono de correo">
+                    <div>
+                        <h4>bs8@bs8.com</h4>
+                    </div> 
+                </div>    
             </div>
+            <!-- Fin ubicacion y contactos -->
         </div>
-        
     </section>
-        <!-- Fin seccion contactos -->
+    <!-- Fin seccion contactos -->
 
-        <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="logo">
             <img src="assets/imagenes/Logo Best Sports 8 (3).png" alt="logo Best Sports">

@@ -63,6 +63,13 @@
     .user{
         margin-left: 20px;
     }
+    a{
+        text-decoration: none !important;
+        color: black ;
+    }
+    .menu li:hover {
+        transform: scale(1.5);
+    }
     .menu ul{
         display: flex;
         flex-direction: row;
@@ -85,11 +92,5 @@
             align-items: center;
         }
     }
-    a{
-        text-decoration: none !important;
-        color: black !important;
-    }
-    .menu li:hover {
-        transform: scale(1.5);
-    }
+    
 

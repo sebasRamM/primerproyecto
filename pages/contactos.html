@@ -48,36 +48,52 @@
     </header>
     <!-- Fin header -->
     <!-- Seccion contactos -->
-    <section>
-        <h2 class="texto__contacto">CONTACTOS</h2>
+    <h2 class="texto__contacto">CONTACTOS</h2>
+    <section class="container-fluid">
         <div class="contenedor-contactos">
             <div class="contactos">
-                <div class="form">
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Correo Eléctronico</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">Nunca compartiremos su correo con nadie</div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nombre">
+                  </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellidos">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Mensaje Enviado</h5>
+                            </div>
+                            <div class="modal-body">
+                                Gracias por tu mensaje, te estaremos contactando por medio de tu correo electrónico
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Guardar</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                      </form>
-                </div>          
+                    </div>
+                </div>
             </div>
                 <!-- Fin formulario --> 
                 <!-- Ubicacion y contactos -->
-                    <div>
-                        <img class="mapa" src="../assets/imagenes/5fa28157b6339.jpeg" alt="mapa">
-                    </div>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.879667208088!2d-84.15254538575942!3d9.943968976726188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fb698e1ba15b%3A0x781267d196d66afc!2sMultiplaza%20Escaz%C3%BA!5e0!3m2!1ses!2scr!4v1658931934950!5m2!1ses!2scr" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
                     
-                    <div class="iconos__contactos">
+                    <div class="iconos-contactos">
                         <div class="ubicacion">
                             <img src="../assets/imagenes/1491254387-pindestinationmaplocation_82942.png" alt="icono ubicacion">
                             <div>
@@ -101,9 +117,8 @@
                         </div>    
                     </div>
                     <!-- Fin ubicacion y contactos -->
-            </div> -->
-        </div>
-        
+            </div>
+        </div>   
     </section>
     <!-- Fin seccion contactos -->
 

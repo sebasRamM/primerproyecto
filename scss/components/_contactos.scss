@@ -1,4 +1,26 @@
-.col {
-    display: flex;
-    flex-direction: column;
+
+@media (max-width: 768px) {
+    .contenedor-contactos {
+        display: flex;
+        flex-direction: column;
+    }
 }
+ @media (min-width: 767px) and (max-width: 1200px) {
+     .contenedor-contactos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+     .iconos-contactos {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         margin: 50px 0 50px 0px;
+     }
+ }
+ @media (max-width: 1280px) {
+    .iconos-contactos{
+        display: flex;
+        align-items: stretch;
+    }
+ }

@@ -69,6 +69,15 @@
   margin-left: 20px;
 }
 
+a {
+  text-decoration: none !important;
+  color: black;
+}
+
+.menu li:hover {
+  transform: scale(1.5);
+}
+
 .menu ul {
   display: flex;
   flex-direction: row;
@@ -93,15 +102,6 @@
     align-items: center;
   }
 }
-a {
-  text-decoration: none !important;
-  color: black !important;
-}
-
-.menu li:hover {
-  transform: scale(1.5);
-}
-
 .principal {
   display: flex;
   justify-content: center;
@@ -140,7 +140,6 @@ video {
   margin-bottom: 3%;
   font-size: 40px;
   border-bottom: 3px solid rgb(20, 20, 124);
-  object-fit: cover;
 }
 
 .contenedor-ofertas {
@@ -148,7 +147,7 @@ video {
   grid-template-columns: repeat(4, 1fr);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .contenedor-ofertas {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -159,16 +158,6 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-}
-@media (min-width: 1024px) {
-  .contenedor-ofertas {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (min-width: 1200px) {
-  .contenedor-ofertas {
-    grid-template-columns: repeat(4, 1fr);
   }
 }
 .ofertas__articulos img {
@@ -202,81 +191,70 @@ h3 {
 
 .noticias {
   display: grid;
-  grid-template-columns: 2, 1fr;
-  display: flex;
-  flex-direction: row;
-  width: 400px;
-  height: 400px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.imagen__noticias {
-  width: 70%;
-  margin-left: 3%;
+@media (max-width: 768px) {
+  .noticias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
-.noticia1 p {
-  width: 350px;
-  margin-left: 20px;
-}
-
-.noticia2 {
-  display: flex;
-  margin-left: 85%;
-}
-
-.noticia2 p {
-  width: 350px;
-  margin-left: 20px;
-}
-
 .contenedor-contactos {
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 100px;
 }
 
 @media (max-width: 768px) {
   .contenedor-contactos {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .contenedor-contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .contactos {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 400px;
-  height: 400px;
+  margin-bottom: 30px;
 }
 
-@media (max-width: 768px) {
-  .form {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.mapa {
-  width: 100%;
-  height: 40vh;
-  display: flex;
-  justify-content: center;
-}
-
-.iconos__contactos {
+.iconos-contactos {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-left: 90px;
 }
 
 @media (max-width: 768px) {
-  .iconos__contactos {
+  .iconos-contactos {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 50px 0 50px 0;
   }
 }
+@media (max-width: 767px) {
+  .iconos-contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+.mapa iframe {
+  width: 500px;
+  height: 400px;
+}
+
 .ubicacion,
 .telefono,
 .correo {
@@ -290,15 +268,10 @@ h3 {
   margin-left: 10px;
 }
 
-.form {
-  margin-left: 100px;
-}
-
 .footer {
   background-color: gainsboro;
   width: 100%;
   height: fit-content;
-  margin-bottom: 30px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -537,22 +510,38 @@ h6 {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.col {
-  display: flex;
-  flex-direction: column;
+.card {
+  margin-bottom: 30px;
 }
 
-.producto-hombre img, .producto-mujer img, .producto-niño img, .articulosDeportivos img {
-  border: 5px solid gainsboro;
-  width: 300px;
-  height: 40vh;
-  margin: 60px;
+@media (min-width: 768px) {
+  .card {
+    margin: 30px;
+  }
 }
-
-.hombre, .mujer, .niño, .articulos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+@media (max-width: 768px) {
+  .contenedor-contactos {
+    display: flex;
+    flex-direction: column;
+  }
 }
-
+@media (min-width: 767px) and (max-width: 1200px) {
+  .contenedor-contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .iconos-contactos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px 0 50px 0px;
+  }
+}
+@media (max-width: 1280px) {
+  .iconos-contactos {
+    display: flex;
+    align-items: stretch;
+  }
+}
 /*# sourceMappingURL=style.css.map */
