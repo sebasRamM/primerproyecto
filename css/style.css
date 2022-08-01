@@ -544,4 +544,17 @@ h6 {
     align-items: stretch;
   }
 }
+.producto-hombre img, .producto-mujer img, .producto-niño img, .articulosDeportivos img {
+  border: 5px solid gainsboro;
+  width: 300px;
+  height: 40vh;
+  margin: 60px;
+}
+
+.hombre, .mujer, .niño, .articulos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 /*# sourceMappingURL=style.css.map */
