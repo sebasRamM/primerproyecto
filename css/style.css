@@ -53,20 +53,22 @@
 .iconos-topnav {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
   .iconos-topnav {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-right: 100px;
   }
 }
 .english,
 .shopping,
 .user {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 a {
@@ -304,17 +306,56 @@ h6 {
   justify-content: center;
 }
 
-.articulosDeportivos img, .producto-niño img, .producto-mujer img, .producto-hombre img {
+.hombre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.producto-hombre img {
   border: 5px solid gainsboro;
   width: 300px;
   height: 40vh;
   margin: 60px;
 }
 
-.articulos, .niño, .mujer, .hombre {
+.mujer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.producto-mujer img {
+  border: 5px solid gainsboro;
+  width: 300px;
+  height: 40vh;
+  margin: 60px;
+}
+
+.niño {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.producto-niño img {
+  border: 5px solid gainsboro;
+  width: 300px;
+  height: 40vh;
+  margin: 60px;
+}
+
+.articulos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.articulosDeportivos img {
+  border: 5px solid gainsboro;
+  width: 300px;
+  height: 40vh;
+  margin: 60px;
 }
 
 .textoProductos {
@@ -543,18 +584,6 @@ h6 {
     display: flex;
     align-items: stretch;
   }
-}
-.producto-hombre img, .producto-mujer img, .producto-niño img, .articulosDeportivos img {
-  border: 5px solid gainsboro;
-  width: 300px;
-  height: 40vh;
-  margin: 60px;
-}
-
-.hombre, .mujer, .niño, .articulos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -21,3 +21,14 @@
     margin-left: 100px;
     color: $color-ofertas;
 }
+@mixin grupo-productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@mixin border {
+    border: $border-imagenes;
+    width: 300px;
+    height: 40vh;
+    margin: 60px;
+}

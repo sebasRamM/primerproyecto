@@ -1,29 +1,29 @@
 @import '../base/variables';
-@import '../base/extends';
+@import '../base/mixins';
 
 .hombre{
-    @extend %estructura-productos;
+    @include grupo-productos;
 }
 .producto-hombre img{
-    @extend %border;
+    @include border;
 } 
 .mujer {
-    @extend %estructura-productos;
+    @include grupo-productos;
 }
 .producto-mujer img{
-    @extend %border;
+    @include border;
 }
 .niño{
-    @extend %estructura-productos;
+    @include grupo-productos;
 }
 .producto-niño img{
-    @extend %border;
+    @include border;
 }
 .articulos{
-    @extend %estructura-productos;
+    @include grupo-productos;
 }
 .articulosDeportivos img{
-    @extend %border;
+    @include border;
 }
 .textoProductos{
     font-size: 35px;
