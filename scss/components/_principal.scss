@@ -85,6 +85,14 @@ h3{
         align-items: center;
     }
 }
+.card {
+    width: 30rem;
+}
+@media (max-width: 375px) {
+    .card {
+        width: 20rem;
+    }
+}
 .contenedor-contactos {
     display: grid;
     justify-items: center;
@@ -105,11 +113,21 @@ h3{
         align-items: center;
      }
 }
+@media (max-width: 375px) {
+    .form-control {
+        width: 20rem;
+    }
+}
 .contactos{
     display: flex;
     flex-direction: column;
     width: 400px;
     margin-bottom: 30px;
+}
+@media (max-width: 375px) {
+    .contactos {
+        align-items: center;
+    }
 }
 .iconos-contactos{
     display: flex;
@@ -121,28 +139,29 @@ h3{
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 50px 0 50px 0;
+        align-content:space-between;
     }
 }
 @media (max-width: 767px) {
     .iconos-contactos {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 }
 .mapa iframe {
     width: 500px;
     height: 400px;
 }
+@media (max-width: 375px) {
+    .mapa iframe{
+        width: 20rem;
+    }
+}
 .ubicacion,
 .telefono,
 .correo{
     display: flex;
     flex-direction: row;
-}
-.ubicacion,
-.telefono,
-.correo h4{
-    margin-left: 10px;
+    justify-content: space-between;
 }
